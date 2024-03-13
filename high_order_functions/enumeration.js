@@ -28,3 +28,10 @@ console.log("evenNumbers:", evenNumbers);
 
 // Reduce Method
 
+// reduce allows the total to be added
+const total = numbers.reduce((reducer, number) => {
+    console.log("reducer:", reducer);
+    return reducer + number
+},0);
+// 0 is the starting value
+console.log("total:", total)
